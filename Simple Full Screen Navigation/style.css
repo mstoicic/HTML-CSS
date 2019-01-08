@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  background: url(../img/showcase.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.wrapper h1 {
+  padding-top: 230px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 62px;
+}
+
+.open {
+  color: #fff;
+  font-size: 30px;
+  float: left;
+  margin: 1em 0 0 1em;
+  display: block;
+  cursor: pointer;
+}
+
+.nav {
+  width: 0%;
+  overflow-x: hidden;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+  background: rgba(34,65,93,0.9);
+  transition: .4s;
+  display: block;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1em 0;
+  transition: .4s;
+  clear: left;
+}
+
+.close {
+  float: left;
+  margin: 0.5em 0 0 1.5em;
+}
+
+.nav a:not(:first-child):hover {
+  background: #b37020;
+}
