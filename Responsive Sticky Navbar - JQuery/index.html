@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Responsve Sticky Navbar JQuery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <!-- FontAwesome & JQuery -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <!-- Navigation -->
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">LOGO</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End of navigation -->
+    </header>
+    <div class="content">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae omnis eveniet at ut corporis, laboriosam saepe quaerat nobis dignissimos, quam animi nemo? Excepturi illo natus voluptatem aliquam maxime, explicabo quibusdam laboriosam? Cupiditate laudantium, excepturi sunt, ullam, veritatis aliquam aperiam rerum praesentium repellat voluptatum ipsum. Nobis ducimus enim earum quos. Explicabo!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam accusamus quas nam nisi illo accusantium labore fugit animi aliquam totam alias et dolores iure optio omnis asperiores, ut vero odit. Corrupti recusandae possimus nostrum, maxime nam ut distinctio eligendi magnam ullam dolores voluptas ex, animi itaque illum ad. Dicta adipisci explicabo, quaerat iure odio ullam. Illo, et! Fuga, autem aspernatur. Non, sequi explicabo nam labore illum velit similique vero cupiditate soluta eveniet atque consectetur laudantium exercitationem nulla accusantium voluptatum tempore saepe amet, maiores accusamus, fugiat aliquam voluptatibus! Placeat odio alias, ipsum perspiciatis sit debitis harum beatae reprehenderit optio maiores?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quisquam accusamus quas nam nisi illo accusantium labore fugit animi aliquam totam alias et dolores iure optio omnis asperiores, ut vero odit. Corrupti recusandae possimus nostrum, maxime nam ut distinctio eligendi magnam ullam dolores voluptas ex, animi itaque illum ad. Dicta adipisci explicabo, quaerat iure odio ullam. Illo, et! Fuga, autem aspernatur. Non, sequi explicabo nam labore illum velit similique vero cupiditate soluta eveniet atque consectetur laudantium exercitationem nulla accusantium voluptatum tempore saepe amet, maiores accusamus, fugiat aliquam voluptatibus! Placeat odio alias, ipsum perspiciatis sit debitis harum beatae reprehenderit optio maiores?</p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    //Menu toggle button
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+    });
+  });
+
+    //Scrolling effect
+    $(window).on("scroll", function() {
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black');
+      }
+    })
+  </script>
+</body>
+</html>
